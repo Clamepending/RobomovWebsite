@@ -27,6 +27,16 @@ a{
     z-index: 1;
 }
 
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
 #intro::after{
     content: '';
     position: absolute;
@@ -57,7 +67,9 @@ a{
 }
 
 #intro h1:nth-child(2) {
+    animation: text_reveal_color ease 0.5s forwards;
     animation-delay: 2s;
+    font-weight: 300;
 }
 
 #intro h1 span:nth-child(1) span{
@@ -113,15 +125,19 @@ a{
         left: 100%;
     }
 }
+
 @keyframes text_reveal {
-    0% {
-
-    }
-
-    
-
     100%{
         color: white;
+    }
+    
+}
+
+@keyframes text_reveal_color {
+    100%{
+        color: yellow;
+        
+
     }
     
 }
