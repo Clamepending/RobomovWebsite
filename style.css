@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 html{
     font-size: 20px;
@@ -10,6 +11,148 @@ html{
 a{
     text-decoration: none;
 }   
+
+
+/* parts section */
+
+.part-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.part-title span{
+    color: orange;
+}
+
+/* end Parts section */
+
+
+/* Part 1 */
+#part1 .part1 {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+#part1 .step{
+    width: 100%;
+}
+#part1 .step-info h1{
+     margin-bottom: 50px;
+     
+}
+
+#part1 .all-steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#part1 .step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+#part1 .step-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(27, 35, 75), rgb(123, 148, 177));
+    color: white;
+}
+
+
+/*  end part 1 */
+
+
+/* Part 2 */
+#part2 .part2 {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    
+}
+#part2 .step{
+    width: 100%;
+}
+#part2 .step-info h1{
+     margin-bottom: 50px;
+     
+}
+
+#part2 .all-steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#part2 .step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+
+#part2 .step-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(60deg, rgb(27, 35, 75), rgb(123, 148, 177));
+    color: white;
+}
+
+
+/*  end part 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container{
     min-height: 100vh;            /* fall-back */
     min-height: fill-available;

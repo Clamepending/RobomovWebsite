@@ -58,20 +58,24 @@
         
         <div class = "start message container"><h1>Lets get started</h1></div>
 
+
+
+
                 <!-- Part 1 -->
 
-                <section id = "part 1">
-                    <div class="part 1">
-                        <h1 class = "part title">Part 1</h1>
+                <section id = "part1">
+                    <div class="part1">
+                        <h1 class = "part-title">Part <span>1</span></h1>
 
 
                         <div class = "all-steps">
                             <div class = "step">
                                 <div class = "step-info">
                                     <h1>The battery</h1>
+                                    
                                 </div>
                                 <div class = "step-img">
-                                    <img>
+                                    <img src = "img/steps/TheBattery.jpg" class = "center-fit">
                                 </div>
                             </div>
 
@@ -87,7 +91,7 @@
                                         Soldering iron</p>
                                 </div>
                                 <div class = "step-img">
-                                    <img>
+                                    <img src="img/batteryParts.png" class = "center-fit">
                                 </div>
                             </div>
 
@@ -95,11 +99,97 @@
                                 <div class = "step-info">
                                     <h1>Soldering</h1>
                                     <p>
-                                        Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at around 400 degrees C) and touching the molten solder onto where the connection is needed. (image of soldering)
-There are excellent soldering tutorials on youtube such as https://www.youtube.com/watch?v=VxMV6wGS3NY
+                                        Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at around 400 degrees C) and touching the molten solder onto where the connection is needed.
+                                        There are excellent soldering tutorials on youtube like the one below.
+                                    </p>
+                                    <p>
+                                        Hint: To keep the female t connector from deforming, it is a good idea to plug the male one in to keep the shape while soldering. 
+                                    </p>
+                                </div>
+                                <div class = "step-img">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VxMV6wGS3NY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
 
 
-Hint: To keep the female t connector from deforming, it is a good idea to plug the male one in to keep the shape while soldering. (image)
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>Solder the black wire to the horizontal pin and red wire to the vertica pin of the T connector. (image)</p>
+                                </div>
+                                <div class = "step-img">
+                                    <img src="img/steps/BatteryTConnectorBack.jpg" class="center-fit">
+                                </div>
+                            </div>
+
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>The result should look like this:</p>
+                                </div>
+                                <div class = "step-img">
+                                    <img src = "img/steps/TheBattery.jpg" class = "center-fit">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- End Part 1 -->
+
+
+
+                
+                <!-- Part 2 -->
+
+                <section id = "part2">
+                    <div class="part2">
+                        <h1 class = "part-title">Part <span>2</span></h1>
+
+
+                        <div class = "all-steps">
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>The Teensy</h1>
+                                    
+                                </div>
+                                <div class = "step-img">
+                                    <img src = "img/steps/teensy.jpg" class = "center-fit">
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Materials used:</h1>
+
+                                    <p>Teensy LC x1
+                                        Male header pins x2
+                                        </p>
+                                    <h1>Tools needed:</h1>
+                                    <p>Solder
+                                        Soldering iron
+                                        </p>
+                                </div>
+                                <div class = "step-img">
+                                    <img src="img/teensyMaterials.jpg" class = "center-fit">
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Header Pins</h1>
+                                    <p>
+                                        It is important to solder the header pins straight, and not have them slanted 
+                                    </p>
+                                    <p>
+                                        To break header pins into the right length, use your fingernails or a wire cutter on the indent between the pins where you want to make a cut.
+                                    </p>
+                                    <p>
+                                        With fingernail: Apply pressure as close you can to the fingernail to bend the header pin to minimise the chance of the header pin breaking at some other point.
+                                    </p>
+                                    <p>    
+                                        With wire cutter: align the mouth of the wire cutter with the indent where you want to cut the header pin and squeeze.
 
                                     </p>
                                 </div>
@@ -111,7 +201,38 @@ Hint: To keep the female t connector from deforming, it is a good idea to plug t
 
                             <div class = "step">
                                 <div class = "step-info">
-                                    <p>Solder the black wire to the horizontal pin and red wire to the vertica pin of the T connector. (image)</p>
+                                    <p>Please cut the following length header pins:
+                                        14 pin long header pin x2
+                                        3 pin long header pin x1
+                                        1 pin header x1
+                                        </p>
+                                </div>
+                                <div class = "step-img">
+                                    <img>
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>Take a 14 pin  header pin and put it in one side of the teensy, making sure all 14 pins go into a hole
+                                        </p>
+                                </div>
+                                <div class = "step-img">
+                                    <img>
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>Solder only the first pin.
+                                    </p>
+                                    <p>
+                                        Inspect the header pin to see if it is slanted or has a gap.
+                                        To fix any issues, melt the soldered pin and adjust the header pin, then remove the soldering iron to let the solder harden again.
+                                    </p>
+                                    <p>
+                                        Once the header pin looks like this (image), solder the rest of the pins.
+                                    </p>
                                 </div>
                                 <div class = "step-img">
                                     <img>
@@ -121,9 +242,8 @@ Hint: To keep the female t connector from deforming, it is a good idea to plug t
 
                             <div class = "step">
                                 <div class = "step-info">
-                                    <p>The result should look like this:
-                                        (image)
-                                        </p>
+                                    <p>Repeat the process on the other side with 14 more pins
+                                    </p>
                                 </div>
                                 <div class = "step-img">
                                     <img>
@@ -131,24 +251,35 @@ Hint: To keep the female t connector from deforming, it is a good idea to plug t
                             </div>
 
 
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>Take the 3 pin header and put it into the inside 3 pins of the teensy (image)
+                                        Solder 1 pin and make sure the header pin is straight without any gaps.
+                                        Correct as needed like above, and solder the rest of the pins once done.
+                                        
+                                    </p>
+                                </div>
+                                <div class = "step-img">
+                                    <img>
+                                </div>
+                            </div>
+
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <p>The result should look like this:</p>
+                                </div>
+                                <div class = "step-img">
+                                    <img src = "img/steps/teensy.jpg" class = "center-fit">
+                                </div>
+                            </div>
+
+
                         </div>
-                        <p>Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at around 400 degrees C) and touching the molten solder onto where the connection is needed. (image of soldering)
-                            There are excellent soldering tutorials on youtube such as https://www.youtube.com/watch?v=VxMV6wGS3NY
-                        </p>
-                        <p>
-                            Hint: To keep the female t connector from deforming, it is a good idea to plug the male one in to keep the shape while soldering. (image)           
-                        </p>
-                        <p>
-                            Solder the black wire to the horizontal pin and red wire to the vertica pin of the T connector. (image) 
-                        </p>
-                        <p>
-                            The result should look like this:
-                            (image)
-                        </p>
                     </div>
                 </section>
 
-                <!-- End Part 1 -->
+                <!-- End Part 2 -->
 
             </div>
         </section>
