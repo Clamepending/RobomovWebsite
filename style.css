@@ -31,7 +31,7 @@ ul{
     font-size: 4rem;
     font-weight: 300;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -40,10 +40,6 @@ ul{
     color: orange;
 }
 
-/* end Parts section */
-
-
-/* Part 1 */
 .part {
     flex-direction: column;
     max-width: 800px;
@@ -52,13 +48,16 @@ ul{
     
 }
 
+/* end Parts section */
+
+
+/* step start */
+
+
 .step{
     width: 100%;
 }
-.step-info h1{
-     margin-bottom: 50px;
-     
-}
+
 
 .step-img img{
     width: 100%;
@@ -91,15 +90,20 @@ ul{
     flex-basis: 50%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     justify-content: center;
     flex-direction: column;
     background-image: linear-gradient(60deg, rgb(27, 35, 75), rgb(123, 148, 177));
     color: white;
+    text-align: center;
 }
 
+.step-info h1{
+    margin-bottom: 50px;
+    
+}
 
-/*  end part 1 */
+/*  end step */
 
 
 
@@ -149,6 +153,32 @@ ul{
 
 
 
+
+/* sections */
+#part1{
+    background-color: rgb(227, 249, 255);
+}
+#part2{
+    background-color: rgb(227, 255, 241);
+}
+#part3{
+    background-color: rgb(228, 255, 227);
+}
+#part4{
+    background-color: rgb(245, 255, 227);
+}
+#part5{
+    background-color: rgb(255, 248, 227);
+}
+#part6{
+    background-color: rgb(255, 233, 227);
+}
+#part7{
+    background-color: rgb(255, 227, 249);
+}
+#part8{
+    background-color: rgb(235, 227, 255);
+}
 
 
 
