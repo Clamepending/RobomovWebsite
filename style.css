@@ -95,11 +95,17 @@ ul{
     flex-direction: column;
     background-image: linear-gradient(60deg, rgb(27, 35, 75), rgb(123, 148, 177));
     color: white;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.step-info ul{
+    margin-left: 23px;
+    /* text-align: center; */
 }
 
 .step-info h1{
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     
 }
 
