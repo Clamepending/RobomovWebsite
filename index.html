@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Zircon Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=ruby&amp;skin=sons-of-obsidian"></script>
 </head>
     <body>  
             <!--Intro Section-->
@@ -1141,6 +1142,7 @@
                                     <p>Each topic will have a video, problem, and solution</p>
                                     <p>Watch the video, then try to solve the problem on your own before looking at the answer</p>
                                     <p>each problem builds on the previous, so not understanding one will make the next harder</p>
+                                    <p>There are MULTIPLE ways to solve the problem. Dont worry if your solution doesnt look exactly like the answer!</p>
                                 </div>
                             </div>
 
@@ -1165,7 +1167,114 @@
                                 </div>
                                 <div class = "step-img">
                                     <h1>Answer:</h1>
-                                    <p></p>
+                                    <?prettify linenums=1?>
+                                    <pre class="prettyprint">
+#include &lt;Arduino.h&gt;
+
+void setup() {
+    // put your setup code here, to run once:
+
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+    // put your main code here, to run repeatedly
+
+    String yourName = "Mark";
+    Serial.println(yourName);
+    
+    delay(700);
+}
+</pre>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Computation and Data Types</h1>
+                                    
+                                </div>
+                                <div class = "step-img">
+                                    <iframe width=100% height="360" src="https://www.youtube.com/embed/xTUMSJTGjw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Problem: Computation and Data Types</h1>
+                                    
+                                </div>
+                                <div>
+                                    <p>Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (your computed answer)" from the teensy every second</p>
+                                </div>
+                                <div class = "step-img">
+                                    <h1>Answer:</h1>
+                                    <pre class="prettyprint">
+#include &lt;Arduino.h&gt;
+
+void setup() {
+
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+
+    // we use a double because it can handle very big numbers, floats, and very small numbers.
+    double answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
+    
+    //we use String() to convert answer from a double to a float to combine it with a string to print it out
+    Serial.println("the answer is: " + String(answer));
+    
+    
+    delay(1000);
+}
+                                            </pre>
+                                </div>
+                            </div>
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Serial, Printing, and Delay</h1>
+                                    
+                                </div>
+                                <div class = "step-img">
+                                    <iframe width=100% height="360" src="https://www.youtube.com/embed/xTUMSJTGjw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class = "step">
+                                <div class = "step-info">
+                                    <h1>Problem: Serial, Printing, and Delay</h1>
+                                    
+                                </div>
+                                <div>
+                                    <p>print your name to the serial port every 0.7 seconds forever</p>
+                                </div>
+                                <div class = "step-img">
+                                    <h1>Answer:</h1>
+                                    <pre class="prettyprint">
+#include &lt;Arduino.h&gt;
+
+void setup() {
+    // put your setup code here, to run once:
+
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+    // put your main code here, to run repeatedly
+
+    String yourName = "Mark";
+    Serial.println(yourName);
+    
+    delay(700);
+}
+                                            </pre>
                                 </div>
                             </div>
 
@@ -1176,7 +1285,7 @@
                     </div>
                 </section>
 
-                <!-- End Software Setup -->
+                <!-- End C++ Tutorial -->
 
 
             </div>
