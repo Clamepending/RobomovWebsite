@@ -1143,6 +1143,7 @@
                                     <p>Watch the video, then try to solve the problem on your own before looking at the answer</p>
                                     <p>each problem builds on the previous, so not understanding one will make the next harder</p>
                                     <p>There are MULTIPLE ways to solve the problem. Dont worry if your solution doesnt look exactly like the answer!</p>
+                                    <h1>If you are stuck: GOOGLE IT!</h1>
                                 </div>
                             </div>
 
@@ -1224,10 +1225,12 @@ void setup() {
 
 void loop() {
 
-    // we use a double because it can handle very big numbers, floats, and very small numbers.
+    // we use a double because it can handle 
+    //very big numbers, floats, and very small numbers.
     double answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
     
-    //we use String() to convert answer from a double to a float to combine it with a string to print it out
+    //we use String() to convert answer from a double 
+    //to a float to combine it with a string to print it out
     Serial.println("the answer is: " + String(answer));
     
     
@@ -1258,7 +1261,7 @@ void loop() {
                                     <p>this one is hard!</p>
                                 </div>
                                 <div class = "step-img">
-                                    <h1>Answer: 102334155</h1>
+                                    <h1>Answer: </h1>
                                     <pre class="prettyprint">
 #include &lt;Arduino.h&gt;
 
@@ -1270,21 +1273,28 @@ void loop() {
     }   
     
     void loop() {
-        //we define a and b to be the last 2 numbers we have so far
+        //we define a and b to be 
+        //the last 2 numbers we have so far
         int a = 1;
         int b = 1;
     
     
-        //we can declare a variable without assigning it to a specific value like 0. 
-        //we are essentially promissing to assign a value to it before we use it
-        //the code would work the same if you just said int nextNumber = 0;
+        //we can declare a variable without assigning it to 
+        //a specific value like 0. 
+        //we are essentially promissing to assign a value to 
+        //it before we use it
+        //the code would work the same if you just said 
+        //int nextNumber = 0;
         int nextNumber; 
     
-        //we set i &lt; 38 because we set the first two fibinacci numbers 1, 1 as default, so at i = 0, we are calculating the 3rd fibinacci number
+        //we set i &lt; 38 because we set the first two fibinacci 
+        //numbers 1, 1 as default, so at i = 0, 
+        //we are calculating the 3rd fibinacci number
         //so 40 - 2 = 38
         for(int i = 0; i &lt; 38; i++){
             //here we compute the next number
-            //if this is the first run, it is the first time nextNumber is assigned
+            //if this is the first run, it is the 
+            //first time nextNumber is assigned
             nextNumber = a + b;
             a = b;
             b = nextNumber;
@@ -1293,6 +1303,7 @@ void loop() {
         
         delay(700);
     }
+//answer is 102334155
                                             </pre>
                                 </div>
                             </div>
@@ -1330,13 +1341,17 @@ void setup() {
 }   
 
 void loop() {
-    //the strategy here is to start at 2 and see if any number divides 1294892647 with remainder 0
+    //the strategy here is to start at 2 and see if any 
+    //number divides 1294892647 with remainder 0
     //if not, try a higher number until you can
-    //then print that out and divide that factor out of 1294892647 and restart the process until you get 1
+    //then print that out and divide that factor out of 
+    //1294892647 and restart the process until you get 1
 
     int number = 1294892647;
 
-    //start by trying to divide by 2 because everything is divisible by 1
+    //start by trying to divide by 2 because everything 
+    //is divisible by 1
+    
     int testFactor = 2;
 
     Serial.println("Factors are: ");
@@ -1404,15 +1419,17 @@ void loop() {
 #include &lt;Arduino.h&gt;
 
 void setup() {
-    // put your setup code here, to run once:
-
+    
     Serial.begin(9600);
 
 }   
 
 void loop() {
-
+    
+    //store the time at the start
     int start = millis();
+
+    //below is the program from before:
 
     int number = 1294892647;
     int testFactor = 2;
@@ -1428,7 +1445,12 @@ void loop() {
       
     }
 
-    Serial.println("the factorization took: " + String(millis() - start) + " milliseconds");
+
+    //Print the difference between current time and start
+    Serial.println("the factorization took: " + 
+    String(millis() - start) + 
+    " milliseconds");
+
     delay(1000);
 }
 
@@ -1496,7 +1518,7 @@ void setup() {
 
 void loop() {
 
-    for(int i = 1; i < 101; i++){
+    for(int i = 1; i &lt; 101; i++){
       PrintMyName(i);
     }
     
@@ -1506,7 +1528,7 @@ void loop() {
 
 
 /**
- * Factors are: 
+ * Output: 
  Your Name 1
  Your Name 2
  Your Name 3
@@ -1629,6 +1651,7 @@ void loop() {
                             <div class = "step">
                                 <div class = "step-info">
                                     <h1>Problem: Arrays</h1>
+                                    <p>Use an arrary to find the sum of {230, 345, 45, 1, 45, 95, 5325, 53, 23, 5, 46, 7, 8, 5, 6, 5, 46, 6}</p>
                                     
                                 </div>
                                 <div>
@@ -1639,37 +1662,53 @@ void loop() {
                                     <pre class="prettyprint">
 #include &lt;Arduino.h&gt;
 
-    void setup() {
-        // put your setup code here, to run once:
-    
-        Serial.begin(9600);
-    
-    }   
-    
-    void loop() {
-        //we define a and b to be the last 2 numbers we have so far
-        int a = 1;
-        int b = 1;
-    
-    
-        //we can declare a variable without assigning it to a specific value like 0. 
-        //we are essentially promissing to assign a value to it before we use it
-        //the code would work the same if you just said int nextNumber = 0;
-        int nextNumber; 
-    
-        //we set i &lt; 38 because we set the first two fibinacci numbers 1, 1 as default, so at i = 0, we are calculating the 3rd fibinacci number
-        //so 40 - 2 = 38
-        for(int i = 0; i &lt; 38; i++){
-            //here we compute the next number
-            //if this is the first run, it is the first time nextNumber is assigned
-            nextNumber = a + b;
-            a = b;
-            b = nextNumber;
-        }
-        Serial.println(nextNumber);
-        
-        delay(700);
+void setup() {
+    // put your setup code here, to run once:
+
+    Serial.begin(9600);
+
+}   
+
+
+void loop() {
+
+    //define a list and paste in the values
+    int listToSum[] = {230, 345, 45, 1, 45, 95, 5325, 53, 23, 
+5, 46, 7, 8, 5, 6, 5, 46, 6};
+
+
+    //initialize a counter to keep track of the total
+    int total = 0;
+
+    //sizeof(listToSum) returns the size in bytes
+    //each int is 4 bytes so we have to divide
+    //sizeof(listToSum) by sizeof(int) to get
+    //the length of the list
+    int sizeOFListToSum = sizeof(listToSum)/sizeof(int);
+
+    //go through all numbers in listToSum
+    for(int i = 0; i &lt; sizeOFListToSum; i++){
+
+      //add each number to total
+      total = total + listToSum[i];
+
     }
+
+    //print the total
+    Serial.println("total: " + String(total));
+
+    //make output easier to read
+    delay(1000);
+
+}
+
+
+
+/**The answer is 6296
+ * Output:
+total: 6296
+total: 6296
+**/
                                             </pre>
                                 </div>
                             </div>
